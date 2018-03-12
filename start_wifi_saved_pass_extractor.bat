@@ -1,1 +1,0 @@
-start cmd /k "cd build/exe.win-amd64-3.5 && saved_wifi_pass_extractor.exe "
