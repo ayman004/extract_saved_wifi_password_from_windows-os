@@ -103,7 +103,19 @@ def get_pass_by_name():
 				print('No password found for',q)
 		else:
 			print('Sorry, that wifi name,is not found in the system')
-		
+#Display the options the user has
+def options():
+	print("""
+	CHOICES
+	-------
+	[1] Get Password of currently connected wifi
+	[2] Get Passwords of All Wifi
+	[3] Get All saved wifi's names
+	[4] Get Password of a given wifi
+	[5] Display options
+	[99] exit
+
+	""")		
 	
 #Display the wellcome message as
 #well as name of the program		
@@ -119,26 +131,9 @@ print("                                                             ")
 print("                                                             ")
 print('\t\t A tool that extracts saved wifi password from the system')
 print()
-
-#Display the options the user has
-def options():
-	print("""
-	CHOICES
-	-------
-	[1] Get Password of currently connected wifi
-	[2] Get Passwords of All Wifi
-	[3] Get All saved wifi's names
-	[4] Get Password of a given wifi
-	[5] Display options
-	[99] exit
-
-	""")
 options()
-
-
 #Main function
 def main():
-	
 	while True:
 		try:
 			choice = int(input("Choice: "))
